@@ -15,3 +15,6 @@ ifeq ($(CFG_SE_API),y)
 srcs-$(CFG_SE_API_SELF_TEST) += se_api_self_tests.c
 cppflags-se_api_self_tests.c-y += -Icore/tee/se
 endif
+
+srcs-y += shadow_box.c
+srcs-y += aes.c
